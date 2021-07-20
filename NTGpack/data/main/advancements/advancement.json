@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0,
+                        "max": 100
+                    },
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:trident"
+                        },
+                        "source_entity": {
+                            "type": "minecraft:player"
+                        }
+                    },
+                    "source_entity": {
+                        "type": "minecraft:player"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:etd"
+    }
+}
